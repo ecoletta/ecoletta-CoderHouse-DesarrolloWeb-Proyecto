@@ -38,12 +38,14 @@ ul ul li {
     width: 100%;
 }
 
-ul li:hover{
-    background-color: white;
-}
-
-ul li:hover ul {
-    display: block;
+ul li{
+    &:hover{
+        background-color: white;
+    }
+    
+    &:hover ul{
+        display: block;
+    }
 }
 
 /* ESTILO DE NAV - MENU - GRID */

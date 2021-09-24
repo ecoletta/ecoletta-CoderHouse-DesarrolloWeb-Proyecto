@@ -1,15 +1,31 @@
 /* ESTILO DE FORMULARIOS Y BOTONES */
 
-input:hover{
-    background-color: var(--myturquoise1-color);
-    color: white;
-    transform: scale(1.25);
+// input:hover{
+//     background-color: var(--myturquoise1-color);
+//     color: white;
+//     transform: scale(1.25);
+// }
+
+input{
+    &:hover{
+        background-color: var(--myturquoise1-color);
+        color: white;
+        transform: scale(1.25);
+    }
 }
 
-textarea:hover{
-    background-color: var(--myturquoise1-color);
-    color: white;
-    transform: scale(1.25);
+// textarea:hover{
+//     background-color: var(--myturquoise1-color);
+//     color: white;
+//     transform: scale(1.25);
+// }
+
+textarea{
+    &:hover{
+        background-color: var(--myturquoise1-color);
+        color: white;
+        transform: scale(1.25);
+    }
 }
 
 .boton{
