@@ -1,0 +1,516 @@
+/* PALETA DE COLORES */
+:root {
+    --myturquoise1-color:#69D2E7;
+    --myturquoise2-color:#A7DBD8;
+    --myneutral-color:#E0E4CC;
+    --myorange1-color:#F38630;
+    --myorange2-color:#FA6900;
+}
+
+/* RESETEO DE CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO DE TABLAS - NO HAY, QUEDO DEL ENTREGABLE ANTERIOR */
+
+table {
+    border: solid 3px;
+    list-style-position: inside;
+}
+
+th {
+    background-color: var(--myorange2-color);
+    font-style: italic;
+}
+
+tr td{
+    border: solid 1px;
+}
+
+/* ESTILO DE TEXTO */
+p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo{
+    color: var(--myorange2-color);
+    font-family: 'Style Script', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+article {
+    height: 350px;
+    width: 100%;
+}
+
+.articlePar{
+    display: flex;
+    background-color: var(--myturquoise1-color);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.articleImpar{
+    display: flex;
+    background-color: var(--myturquoise2-color);
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+article p {
+    display: inline-block;
+    height: auto;
+    width: 35%;
+    text-align: left;
+}
+
+article img{
+    width: 30%;
+    height: 90%;
+}
+
+/*  
+.articleContacto{
+    display: flex;
+    background-color: var(--myneutral-color);
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.articleContacto p{
+    display: inline-block;
+    height: 80%;
+    width: 25%;
+    text-align: center;
+    border: solid black 1px;
+}
+
+*/
+
+
+/* ESTILO DE LISTAS */
+
+ul li a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+ul li:hover{
+    background-color: white;
+}
+
+ul li{
+    border: solid 3px black;
+    padding: 5px 20px 5px 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    background-color: var(--myturquoise1-color);
+    width: 100%;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+/* ESTILOS DE IMAGENES - IMAGENES DE FONDO - BANNER */
+banner img {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoChat{
+    height: 90px;
+    width: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 90%;
+}
+
+.logoChat:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.logoNav{
+    height: 100%;
+    width: 100%;
+}
+
+/* ESTILO DE FORMULARIOS */
+
+input:hover{
+    background-color: var(--myturquoise1-color);
+    color: white;
+    transform: scale(1.25);
+}
+
+textarea:hover{
+    background-color: var(--myturquoise1-color);
+    color: white;
+    transform: scale(1.25);
+}
+
+/* COLORES DE FONDOS */
+
+header{
+    background-image: linear-gradient(to left, var(--myturquoise2-color), var(--myturquoise1-color));
+    height: 100px;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    background-image: linear-gradient(to left, var(--myturquoise2-color), var(--myturquoise1-color));
+    height: 150px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.colorArticuloImpar{
+    background-color: var(--myturquoise2-color);
+}
+
+.colorArticuloPar{
+    background-color: var(--myturquoise1-color);
+}
+
+/* ESTILO DE NAV - MENU - GRID */
+
+nav{
+    height: 100%;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
+}
+
+/* GRID GENERAL */
+
+.navGrid{
+    grid-area: header;
+}
+
+.bannerGrid{
+    grid-area: banner;
+    z-index: -1;
+}
+
+.gridTitulo{
+    grid-area: titulo;
+}
+
+.clientesGrid{
+    grid-area: clientes;
+    text-align: center;
+}
+
+.footerGrid{
+    grid-area: footer;
+}
+
+/* GRID PAGINA HOME */
+
+.gridHome{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "articulo1  articulo1   articulo1"
+    "articulo2  articulo2   articulo2"
+    "articulo3  articulo3   articulo3"
+    "clientes   clientes    clientes";
+    justify-content: stretch;
+}
+
+.gridArticulo1{
+    grid-area: articulo1;
+    background-color: var(--myturquoise2-color);
+    text-align: center;
+}
+
+.gridArticulo2{
+    grid-area: articulo2;
+    background-color: var(--myturquoise1-color);
+    text-align: center;
+}
+
+.gridArticulo3{
+    grid-area: articulo3;
+    background-color: var(--myturquoise1-color);
+    text-align: center;
+}
+
+/* GRID PAGINA CONTACTO */
+
+.gridContacto{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "contacto   direccion   rrss"
+    "mapa       mapa        mapa";
+    justify-content: center;
+
+}
+
+.contactoContacto{
+    grid-area: contacto;
+
+}
+
+.direccionContacto{
+    grid-area: direccion;
+    text-align: center;
+}
+
+.rrssContacto{
+    grid-area: rrss;
+    text-align: center;
+}
+
+.mapaContacto{
+    grid-area: mapa;
+    height: auto;
+    text-align: center;
+}
+
+/* GRID PAGINA QUIENES SOMOS */
+
+.gridQuienesSomos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "video      video       video";
+    justify-content: stretch;
+}
+
+.gridVideo{
+    grid-area: video;
+    text-align: center;
+}
+
+/* GRID PAGINA PRODUCTOS */
+
+.gridProductos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "producto   producto    producto";
+    justify-content: stretch;
+}
+
+.productoGrid{
+    grid-area: producto;
+    text-align: center;
+}
+
+/* GRID PAGINA PARTNERS */
+
+.gridPartners{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "clientes   clientes    clientes"
+    "caso1      caso1       caso1"
+    "caso2      caso2       caso2";
+    justify-content: stretch;
+
+}
+
+.caso1Grid{
+    grid-area: caso1;
+    text-align: center;
+}
+
+.caso2Grid{
+    grid-area: caso2;
+    text-align: center;
+}
+
+/* GRID PAGINA INGRESAR */
+
+.gridIngresar{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    ".          registro    .";
+    justify-content: center;
+
+}
+
+.registroGrid{
+    grid-area: registro;
+    text-align: center;
+}
+
+/* MODIFICACIONES PERSONALES SOBRE ESTILOS DE BOOTSTRAP  */
+
+.form-check .form-check-input{
+    float: none;
+}
+
+
+/* MEDIA QUERY */
+
+/* TAMAÑO MAS CHICO */
+
+@media only screen and (max-width: 1120px){
+
+    .gridContacto{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto ;
+        grid-template-areas:
+        "header"
+        "banner"
+        "contacto"
+        "direccion"
+        "rrss"
+        "mapa";
+        justify-content: stretch;
+    
+    }
+
+    header{
+        height: auto;
+    }
+
+    nav{
+        height: 100%;
+        z-index: 4;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction:column;
+    }
+
+    ul li{
+        border: solid 3px black;
+        padding: 5px 20px 5px 20px;
+        margin: 20px 0 20px 0;
+        width: 50%;
+        text-align: center;
+    }
+
+}
+
+/* TAMAÑO MEDIANO */
+@media only screen and (min-width: 1120px){
+
+    .gridContacto{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto auto ;
+        grid-template-areas:
+        "header     header      header"
+        "banner     banner      banner"
+        "contacto   direccion   rrss"
+        "mapa       mapa        mapa";
+        justify-content: stretch;
+    
+    }
+}
+
+/* TAMAÑO GRANDE */
+@media only screen and (min-width: 1400px){
+
+    .gridContacto{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto auto ;
+        grid-template-areas:
+        "header     header      header"
+        "banner     banner      banner"
+        "contacto   direccion   rrss"
+        "mapa       mapa        mapa";
+        justify-content: stretch;
+    
+    }
+
+}

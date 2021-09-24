@@ -1,0 +1,91 @@
+/* PALETA DE COLORES */
+:root {
+    --myturquoise1-color:#69D2E7;
+    --myturquoise2-color:#A7DBD8;
+    --myneutral-color:#E0E4CC;
+    --myorange1-color:#F38630;
+    --myorange2-color:#FA6900;
+}
+
+$colorArticuloImpar:var(--myturquoise1-color);
+$colorArticuloPar:var(--myturquoise2-color);
+
+/* RESETEO DE CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO DE TEXTO */
+
+.titulo{
+    color: var(--myorange2-color);
+    font-family: 'Style Script', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+article {
+    height: 350px;
+    width: 100%;
+}
+
+// SE UTILIZO MIXIN PARA MANEJAR EL COLOR DE LOS ARTICULOS
+@mixin articulos ($colorArticuloImpar,$ColorArticuloPar,$tamanioLetra){
+        &--colorImpar{
+            background-color: $colorArticuloImpar;
+        }
+    
+        &--colorPar{
+            background-color: $colorArticuloPar;
+        }
+    
+        &--titulo{
+            font-size: $tamanioLetra;
+            text-align: center;
+        }
+    
+        &--parrafo{
+            text-align: center;
+        }
+}
+
+.articulo{
+
+    @include articulos(var(--myturquoise1-color) , var(--myturquoise2-color),30px)
+}
+
+/* ESTILOS DE IMAGENES - IMAGENES DE FONDO - BANNER */
+banner img {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* COLORES DE FONDOS */
+
+body {
+    background-color: white;
+}
+
+/* DESAFIO COMPLEMENTARIO (CAMBIA COLOR DE TITULO A TURQUESA1) */
+
+
+$coloresDelSitio: var(--myorange2-color), var(--myturquoise2-color), var(--myneutral-color), var(--myorange1-color),var(--myturquoise1-color) ;
+
+@each $color in $coloresDelSitio {
+    
+    .titulo{
+        color: $color;
+    }
+
+}

@@ -1,0 +1,201 @@
+/* GRID GENERAL */
+
+.grilla{
+    &--textoCentrado{
+        text-align: center;
+    }
+    &--textoDerecha{
+        text-align: right;
+    }
+    &--textoIzquierda{
+        text-align: left;
+    }
+}
+
+.navGrid{
+    grid-area: header;
+}
+
+.bannerGrid{
+    grid-area: banner;
+    z-index: -1;
+}
+
+.gridTitulo{
+    grid-area: titulo;
+}
+
+.clientesGrid{
+    grid-area: clientes;
+}
+
+.footerGrid{
+    grid-area: footer;
+}
+
+/* GRID PAGINA HOME */
+
+.gridHome{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "articulo1  articulo1   articulo1"
+    "articulo2  articulo2   articulo2"
+    "articulo3  articulo3   articulo3"
+    "clientes   clientes    clientes";
+    justify-content: stretch;
+}
+
+.gridArticulo1{
+    grid-area: articulo1;
+    background-color: var(--myturquoise2-color);
+}
+
+.gridArticulo2{
+    grid-area: articulo2;
+    background-color: var(--myturquoise1-color);
+}
+
+.gridArticulo3{
+    grid-area: articulo3;
+    background-color: var(--myturquoise1-color);
+}
+
+/* GRID PAGINA CONTACTO */
+
+.gridContacto{
+     @extend .gridHome;
+         grid-template-rows: auto auto auto auto ;
+         grid-template-areas:
+         "header     header      header"
+         "banner     banner      banner"
+         "contacto   direccion   rrss"
+         "mapa       mapa        mapa";
+ }
+
+.contactoContacto{
+    grid-area: contacto;
+
+}
+
+.direccionContacto{
+    grid-area: direccion;
+}
+
+.rrssContacto{
+    grid-area: rrss;
+}
+
+.mapaContacto{
+    grid-area: mapa;
+    height: auto;
+}
+
+/* GRID PAGINA QUIENES SOMOS */
+
+.gridQuienesSomos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "video      video       video";
+    justify-content: stretch;
+}
+
+.gridVideo{
+    grid-area: video;
+}
+
+/* GRID PAGINA PRODUCTOS */
+
+.gridProductos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "producto   producto    producto";
+    justify-content: stretch;
+}
+
+.productoGrid{
+    grid-area: producto;
+}
+
+/* GRID PAGINA PARTNERS */
+
+.gridPartners{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    "clientes   clientes    clientes"
+    "caso1      caso1       caso1"
+    "caso2      caso2       caso2";
+    justify-content: stretch;
+
+}
+
+.caso1Grid{
+    grid-area: caso1;
+}
+
+.caso2Grid{
+    grid-area: caso2;
+}
+
+/* GRID PAGINA INGRESAR */
+
+.gridIngresar{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo"
+    ".          registro    .";
+    justify-content: center;
+
+}
+
+.registroGrid{
+    grid-area: registro;
+}
+
+/* GRID PAGINA INGRESAR */
+
+.grid404{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header     header      header"
+    "banner     banner      banner"
+    "titulo     titulo      titulo";
+    justify-content: center;
+}

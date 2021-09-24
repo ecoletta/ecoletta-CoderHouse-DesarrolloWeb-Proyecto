@@ -1,0 +1,124 @@
+/* MEDIA QUERY */
+/* TAMAÑO MAS CHICO */
+
+@media only screen and (max-width: 1120px){
+
+    .gridContacto{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto ;
+        grid-template-areas:
+        "header"
+        "banner"
+        "contacto"
+        "direccion"
+        "rrss"
+        "mapa";
+        justify-content: stretch;
+    
+    }
+
+    .gridIngresar{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto ;
+        grid-template-areas:
+        "header"
+        "banner"
+        "titulo"
+        "registro";
+        justify-content: center;
+    
+    }
+    
+    .registroGrid{
+        grid-area: registro;
+    }
+
+    .grid404{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "header     header      header"
+        "banner     banner      banner"
+        "titulo     titulo      titulo";
+        justify-content: center;
+    }
+
+    header{
+        height: auto;
+    }
+
+    nav{
+        height: 100%;
+        z-index: 4;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction:column;
+    }
+
+    ul li{
+        border: solid 3px black;
+        padding: 5px 20px 5px 20px;
+        margin: 20px 0 20px 0;
+        width: 50%;
+        text-align: center;
+    }
+    
+    // SE OCULTA EL LOGO DE CHAT
+    .logoChat{
+        display: none;
+    }
+}
+
+/* TAMAÑO MEDIANO */
+@media only screen and (min-width: 1120px){
+
+    .gridContacto{
+         display: grid;
+         height: 100%;
+         width: 100%;
+         grid-template-columns: 33% 34% 33%;
+         grid-template-rows: auto auto auto auto ;
+         grid-template-areas:
+         "header     header      header"
+         "banner     banner      banner"
+         "contacto   direccion   rrss"
+         "mapa       mapa        mapa";
+         justify-content: stretch;  
+        }
+    }
+
+/* TAMAÑO GRANDE */
+@media only screen and (min-width: 1400px){
+
+    .gridContacto{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto auto ;
+        grid-template-areas:
+        "header     header      header"
+        "banner     banner      banner"
+        "contacto   direccion   rrss"
+        "mapa       mapa        mapa";
+        justify-content: stretch;  
+    }
+}

@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+:root {
+  --myturquoise1-color:#69D2E7;
+  --myturquoise2-color:#A7DBD8;
+  --myneutral-color:#E0E4CC;
+  --myorange1-color:#F38630;
+  --myorange2-color:#FA6900; }
+
+/* RESETEO DE CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* ESTILO DE TEXTO */
+.titulo {
+  color: var(--myorange2-color);
+  font-family: 'Style Script', cursive;
+  text-align: center;
+  font-size: 50px; }
+
+p {
+  color: black;
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  text-align: center; }
+
+article {
+  height: 350px;
+  width: 100%; }
+
+.articulo--colorImpar {
+  background-color: var(--myturquoise1-color); }
+
+.articulo--colorPar {
+  background-color: var(--myturquoise2-color); }
+
+.articulo--titulo {
+  font-size: 30px;
+  text-align: center; }
+
+.articulo--parrafo {
+  text-align: center; }
+
+/* ESTILOS DE IMAGENES - IMAGENES DE FONDO - BANNER */
+banner img {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* COLORES DE FONDOS */
+body {
+  background-color: white; }
+
+/* DESAFIO COMPLEMENTARIO (CAMBIA COLOR DE TITULO A TURQUESA1) */
+.titulo {
+  color: var(--myorange2-color); }
+
+.titulo {
+  color: var(--myturquoise2-color); }
+
+.titulo {
+  color: var(--myneutral-color); }
+
+.titulo {
+  color: var(--myorange1-color); }
+
+.titulo {
+  color: var(--myturquoise1-color); }
+
+/*CONFIGURACION GENERAL DEL HEADER */
+header {
+  background-image: linear-gradient(to left, var(--myturquoise2-color), var(--myturquoise1-color));
+  height: 100px;
+  width: 100%; }
+
+/* ESTILO DE LISTAS */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%; }
+
+ul li {
+  border: solid 3px black;
+  padding: 5px 20px 5px 20px; }
+
+ul li a {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 25px; }
+
+ul ul {
+  position: absolute;
+  display: none; }
+
+ul ul li {
+  display: block;
+  background-color: var(--myturquoise1-color);
+  width: 100%; }
+
+ul li:hover {
+  background-color: white; }
+
+ul li:hover ul {
+  display: block; }
+
+/* ESTILO DE NAV - MENU - GRID */
+nav {
+  height: 100%;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 100%; }
+
+.logoNav {
+  height: 100%;
+  width: 100%; }
+
+/* GRID GENERAL */
+.grilla--textoCentrado {
+  text-align: center; }
+
+.grilla--textoDerecha {
+  text-align: right; }
+
+.grilla--textoIzquierda {
+  text-align: left; }
+
+.navGrid {
+  grid-area: header; }
+
+.bannerGrid {
+  grid-area: banner;
+  z-index: -1; }
+
+.gridTitulo {
+  grid-area: titulo; }
+
+.clientesGrid {
+  grid-area: clientes; }
+
+.footerGrid {
+  grid-area: footer; }
+
+/* GRID PAGINA HOME */
+.gridHome, .gridContacto {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo" "articulo1  articulo1   articulo1" "articulo2  articulo2   articulo2" "articulo3  articulo3   articulo3" "clientes   clientes    clientes";
+  justify-content: stretch; }
+
+.gridArticulo1 {
+  grid-area: articulo1;
+  background-color: var(--myturquoise2-color); }
+
+.gridArticulo2 {
+  grid-area: articulo2;
+  background-color: var(--myturquoise1-color); }
+
+.gridArticulo3 {
+  grid-area: articulo3;
+  background-color: var(--myturquoise1-color); }
+
+/* GRID PAGINA CONTACTO */
+.gridContacto {
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "contacto   direccion   rrss" "mapa       mapa        mapa"; }
+
+.contactoContacto {
+  grid-area: contacto; }
+
+.direccionContacto {
+  grid-area: direccion; }
+
+.rrssContacto {
+  grid-area: rrss; }
+
+.mapaContacto {
+  grid-area: mapa;
+  height: auto; }
+
+/* GRID PAGINA QUIENES SOMOS */
+.gridQuienesSomos {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo" "video      video       video";
+  justify-content: stretch; }
+
+.gridVideo {
+  grid-area: video; }
+
+/* GRID PAGINA PRODUCTOS */
+.gridProductos {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo" "producto   producto    producto";
+  justify-content: stretch; }
+
+.productoGrid {
+  grid-area: producto; }
+
+/* GRID PAGINA PARTNERS */
+.gridPartners {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo" "clientes   clientes    clientes" "caso1      caso1       caso1" "caso2      caso2       caso2";
+  justify-content: stretch; }
+
+.caso1Grid {
+  grid-area: caso1; }
+
+.caso2Grid {
+  grid-area: caso2; }
+
+/* GRID PAGINA INGRESAR */
+.gridIngresar {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo" ".          registro    .";
+  justify-content: center; }
+
+.registroGrid {
+  grid-area: registro; }
+
+/* GRID PAGINA INGRESAR */
+.grid404 {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo";
+  justify-content: center; }
+
+/* ESTILO DE FORMULARIOS Y BOTONES */
+input:hover {
+  background-color: var(--myturquoise1-color);
+  color: white;
+  transform: scale(1.25); }
+
+textarea:hover {
+  background-color: var(--myturquoise1-color);
+  color: white;
+  transform: scale(1.25); }
+
+.boton {
+  font-weight: bold; }
+  .boton--centrado {
+    text-align: center; }
+  .boton--color {
+    color: white; }
+  .boton--uppercase {
+    text-transform: uppercase; }
+
+/* MODIFICACIONES PERSONALES SOBRE ESTILOS DE BOOTSTRAP PARA FORMS*/
+.form-check .form-check-input {
+  float: none; }
+
+footer .contenedor {
+  background-image: linear-gradient(to left, var(--myturquoise2-color), var(--myturquoise1-color));
+  height: 150px; }
+  footer .contenedor__parrafo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; }
+    footer .contenedor__parrafo--color {
+      color: white; }
+
+.logoChat {
+  height: 90px;
+  width: 150px;
+  position: fixed;
+  bottom: 0;
+  left: 87%; }
+
+.logoChat:hover {
+  transform: rotate(360deg);
+  transition: all 1s; }
+
+/* MEDIA QUERY */
+/* TAMAÑO MAS CHICO */
+@media only screen and (max-width: 1120px) {
+  .gridContacto {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "header" "banner" "contacto" "direccion" "rrss" "mapa";
+    justify-content: stretch; }
+  .gridIngresar {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "banner" "titulo" "registro";
+    justify-content: center; }
+  .registroGrid {
+    grid-area: registro; }
+  .grid404 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header     header      header" "banner     banner      banner" "titulo     titulo      titulo";
+    justify-content: center; }
+  header {
+    height: auto; }
+  nav {
+    height: 100%;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column; }
+  ul li {
+    border: solid 3px black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 0 20px 0;
+    width: 50%;
+    text-align: center; }
+  .logoChat {
+    display: none; } }
+
+/* TAMAÑO MEDIANO */
+@media only screen and (min-width: 1120px) {
+  .gridContacto {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header     header      header" "banner     banner      banner" "contacto   direccion   rrss" "mapa       mapa        mapa";
+    justify-content: stretch; } }
+
+/* TAMAÑO GRANDE */
+@media only screen and (min-width: 1400px) {
+  .gridContacto {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header     header      header" "banner     banner      banner" "contacto   direccion   rrss" "mapa       mapa        mapa";
+    justify-content: stretch; } }

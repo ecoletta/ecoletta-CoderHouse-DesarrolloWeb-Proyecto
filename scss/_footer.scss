@@ -1,0 +1,31 @@
+//CONFIGURACION GENERAL DEL FOOTER
+
+footer .contenedor {
+    background-image: linear-gradient(to left, var(--myturquoise2-color), var(--myturquoise1-color));
+    height: 150px;
+
+    &__parrafo{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        &--color{
+            color: white;
+        }
+    }
+
+}
+
+// LA FUNCION DE LOGOCHAT SOLO ESTA HABILITADA PARA PANTALLAS MAYORES A 1120px
+
+.logoChat{
+    height: 90px;
+    width: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 87%;
+}
+
+.logoChat:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}

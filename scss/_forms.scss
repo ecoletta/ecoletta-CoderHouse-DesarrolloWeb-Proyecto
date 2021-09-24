@@ -1,0 +1,32 @@
+/* ESTILO DE FORMULARIOS Y BOTONES */
+
+input:hover{
+    background-color: var(--myturquoise1-color);
+    color: white;
+    transform: scale(1.25);
+}
+
+textarea:hover{
+    background-color: var(--myturquoise1-color);
+    color: white;
+    transform: scale(1.25);
+}
+
+.boton{
+    font-weight: bold;
+    &--centrado{
+        text-align: center;
+    }
+    &--color{
+        color: white
+    }
+    &--uppercase{
+        text-transform: uppercase;
+    }
+}
+
+/* MODIFICACIONES PERSONALES SOBRE ESTILOS DE BOOTSTRAP PARA FORMS*/
+
+.form-check .form-check-input{
+    float: none;
+    }
