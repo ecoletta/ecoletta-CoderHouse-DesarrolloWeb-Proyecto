@@ -276,14 +276,26 @@ textarea:hover {
   float: none; }
 
 footer .contenedor {
-  background-image: linear-gradient(to left, var(--myturquoise2-color), var(--myturquoise1-color));
-  height: 150px; }
+  background-image: linear-gradient(to bottom, var(--myturquoise2-color), var(--myturquoise1-color));
+  height: 100%; }
   footer .contenedor__parrafo {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 20px; }
     footer .contenedor__parrafo--color {
-      color: white; }
+      color: black; }
+  footer .contenedor__titulo {
+    text-align: center; }
+    footer .contenedor__titulo--color {
+      color: black; }
+  footer .contenedor__icono {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 10px; }
+    footer .contenedor__icono--color {
+      color: black; }
 
 .logoChat {
   height: 90px;
