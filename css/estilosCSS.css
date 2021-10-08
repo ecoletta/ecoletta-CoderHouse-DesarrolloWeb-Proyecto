@@ -135,7 +135,7 @@ nav {
 
 .bannerGrid {
   grid-area: banner;
-  z-index: -1; }
+  z-index: 0; }
 
 .gridTitulo {
   grid-area: titulo; }
