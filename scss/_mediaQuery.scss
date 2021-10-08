@@ -1,4 +1,13 @@
 /* MEDIA QUERY */
+
+@media only screen and (max-width: 800px){
+    
+    .alternate{
+        flex-direction: column-reverse;
+    }
+  
+}
+
 /* TAMAÑO MAS CHICO */
 
 @media only screen and (max-width: 1120px){
@@ -103,6 +112,7 @@
          "mapa       mapa        mapa";
          justify-content: stretch;  
         }
+
     }
 
 /* TAMAÑO GRANDE */
