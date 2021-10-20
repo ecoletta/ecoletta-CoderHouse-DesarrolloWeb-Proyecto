@@ -55,17 +55,20 @@
 .gridArticulo1{
     grid-area: articulo1;
     background-color: var(--myturquoise2-color);
+    height: 100%;
 }
 
 .gridArticulo2{
     grid-area: articulo2;
     background-color: var(--myturquoise1-color);
     direction: ltr;
+    height: 100%;
 }
 
 .gridArticulo3{
     grid-area: articulo3;
     background-color: var(--myturquoise1-color);
+    height: 100%;
 }
 
 /* GRID PAGINA CONTACTO */
