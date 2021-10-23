@@ -30,6 +30,16 @@ article {
   height: 350px;
   width: 100%; }
 
+section ul {
+  display: block; }
+
+section ul li {
+  margin-bottom: 15px; }
+
+section img {
+  width: 100%;
+  height: auto; }
+
 .articulo--colorImpar {
   background-color: var(--myturquoise1-color); }
 
@@ -38,6 +48,10 @@ article {
 
 .articulo--titulo {
   font-size: 30px;
+  text-align: center; }
+
+.articulo--subtitulo {
+  font-size: 20px;
   text-align: center; }
 
 .articulo--parrafo {
@@ -268,6 +282,9 @@ textarea:hover {
   background-color: var(--myturquoise1-color);
   color: white;
   transform: scale(1.25); }
+
+form {
+  margin-bottom: 20px; }
 
 .boton {
   font-weight: bold; }

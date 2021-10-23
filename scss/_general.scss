@@ -40,8 +40,21 @@ article {
     width: 100%;
 }
 
+section ul{
+    display: block;
+}
+
+section ul li{
+    margin-bottom: 15px;
+}
+
+section img{
+    width: 100%;
+    height: auto;
+}
+
 // SE UTILIZO MIXIN PARA MANEJAR EL COLOR DE LOS ARTICULOS
-@mixin articulos ($colorArticuloImpar,$ColorArticuloPar,$tamanioLetra){
+@mixin articulos ($colorArticuloImpar,$ColorArticuloPar,$tamanioLetra,$tamanioLetraSub){
         &--colorImpar{
             background-color: $colorArticuloImpar;
         }
@@ -52,6 +65,11 @@ article {
     
         &--titulo{
             font-size: $tamanioLetra;
+            text-align: center;
+        }
+
+        &--subtitulo{
+            font-size: $tamanioLetraSub;
             text-align: center;
         }
     
@@ -66,7 +84,7 @@ article {
 
 .articulo{
 
-    @include articulos(var(--myturquoise1-color) , var(--myturquoise2-color),30px)
+    @include articulos(var(--myturquoise1-color) , var(--myturquoise2-color),30px,20px)
 }
 
 /* ESTILOS DE IMAGENES - IMAGENES DE FONDO - BANNER */
