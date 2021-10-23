@@ -14,7 +14,7 @@
 
 /* ESTILO DE TEXTO */
 .titulo {
-  color: var(--myorange2-color);
+  color: var(--myturquoise1-color);
   font-family: 'Staatliches', cursive;
   text-align: center;
   font-size: 50px; }
@@ -60,6 +60,9 @@ section img {
 .articulo--parrafoIzq {
   text-align: left; }
 
+.espacioAbajo {
+  margin-bottom: 20px; }
+
 /* ESTILOS DE IMAGENES - IMAGENES DE FONDO - BANNER */
 banner img {
   height: 600px;
@@ -69,22 +72,6 @@ banner img {
 /* COLORES DE FONDOS */
 body {
   background-color: white; }
-
-/* DESAFIO COMPLEMENTARIO (CAMBIA COLOR DE TITULO A TURQUESA1) */
-.titulo {
-  color: var(--myorange2-color); }
-
-.titulo {
-  color: var(--myturquoise2-color); }
-
-.titulo {
-  color: var(--myneutral-color); }
-
-.titulo {
-  color: var(--myorange1-color); }
-
-.titulo {
-  color: var(--myturquoise1-color); }
 
 /*CONFIGURACION GENERAL DEL HEADER */
 header {

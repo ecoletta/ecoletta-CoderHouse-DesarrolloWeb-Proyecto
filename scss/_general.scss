@@ -19,7 +19,7 @@ $colorArticuloPar:var(--myturquoise2-color);
 /* ESTILO DE TEXTO */
 
 .titulo{
-    color: var(--myorange2-color);
+    color: var(--myturquoise1-color);
     font-family: 'Staatliches', cursive;
     // font-family: 'Style Script', cursive;
     text-align: center;
@@ -87,6 +87,10 @@ section img{
     @include articulos(var(--myturquoise1-color) , var(--myturquoise2-color),30px,20px)
 }
 
+.espacioAbajo{
+    margin-bottom: 20px;
+}
+
 /* ESTILOS DE IMAGENES - IMAGENES DE FONDO - BANNER */
 banner img {
     height: 600px;
@@ -100,15 +104,4 @@ body {
     background-color: white;
 }
 
-/* DESAFIO COMPLEMENTARIO (CAMBIA COLOR DE TITULO A TURQUESA1) */
 
-
-$coloresDelSitio: var(--myorange2-color), var(--myturquoise2-color), var(--myneutral-color), var(--myorange1-color),var(--myturquoise1-color) ;
-
-@each $color in $coloresDelSitio {
-    
-    .titulo{
-        color: $color;
-    }
-
-}
