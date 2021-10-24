@@ -295,6 +295,11 @@ textarea:hover {
 form {
   margin-bottom: 20px; }
 
+.escalarMenos:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: white; }
+
 .boton {
   font-weight: bold; }
   .boton--centrado {

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Style+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <!-- Link a https://michalsnik.github.io/aos/  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Link a https://animate.style/  -->
@@ -32,13 +33,7 @@
                 </a>
                 <ul>
                     <li><a href="quienesSomos.html">QUIENES SOMOS</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a>
-                        <ul>
-                            <li> <a href="../index.html">PC</a></li>
-                            <li> <a href="../index.html">MEMORIA</a></li>
-                            <li> <a href="../index.html">STORAGE</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
                     <li><a href="partners.html">PARTNERS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="ingresar.html">INGRESAR</a></li>
@@ -47,32 +42,36 @@
         </header>
         <banner class="bannerGrid">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+              <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/techimage.jpg" class="d-block w-100" alt="Tech image">
+                  <img src="../img/banner1.jpg" class="d-block w-100" alt="Tech image">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/disenoBanner.jpg" class="d-block w-100" alt="Diseño Banner">
+                  <img src="../img/banner2.jpg" class="d-block w-100" alt="Diseño Banner">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/monitoresBanner.jpg" class="d-block w-100" alt="Monitores Banner">
+                  <img src="../img/banner3.jpg" class="d-block w-100" alt="Monitores Banner">
                 </div>
+                <div class="carousel-item">
+                  <img src="../img/banner4.jpg" class="d-block w-100" alt="Monitores Banner">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-                </button>
+              </button>
             </div>
-        </banner>
+          </banner>
         <section class="gridTitulo">
             <h1 class="titulo animate__animated animate__backInDown">error - pagina no encontrada</h1>
             <h2 class="titulo animate__animated animate__backInDown"><a href="../index.html" >volver al home</a></h2>
@@ -80,13 +79,35 @@
     </div>
     <footer>
         <div class="container-fluid contenedor">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12"><p class="contenedor__parrafo contenedor__parrafo--color">ACA VA LA SUSCRIPCION</p></div>
-                <div class="col-lg-4 col-md-6 col-sm-12"><p class="contenedor__parrafo contenedor__parrafo--color">ACA VAN LOS LINKS</p></div>
-                <div class="col-lg-4 col-md-6 col-sm-12"><p class="contenedor__parrafo contenedor__parrafo--color">ACA VAN LOS RRSS</p></div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <form class="row g-3" style="height: 100%; text-align: center;align-content: center;">
+                <div class="col-auto" style="width: 100%;display: block;">
+                  <label for="mailsuscribe" class="visually-hidden">Ingrese su correo para suscribirse</label>
+                  <input type="email" class="form-control escalarMenos" id="mailsuscribe" placeholder="Ingrese su correo para suscribirse">
+                </div>
+                <div class="col-auto" style="width: 100%;display: block;" >
+                  <button type="submit" class="btn btn-primary mb-3">Suscribirse</button>
+                </div>
+              </form>
             </div>
-        </div>        
-    </footer>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-data">
+                <i class="fas fa-gift contenedor__icono contenedor__icono--color"></i>
+                <h2 class="contenedor__titulo contenedor__titulo--color">Envío gratis desde $ 9.999</h2>
+                <p class="contenedor__parrafo contenedor__parrafo--color">Te enviamos el pedido a tu domicilio. Podes seguir el envio mediante nuestro sistema Trackinator.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-data">
+                <i class="fas fa-user-shield contenedor__icono contenedor__icono--color"></i>
+                <h2 class="contenedor__titulo contenedor__titulo--color">Satisfacción al 100%</h2>
+                <p class="contenedor__parrafo contenedor__parrafo--color">Si tenes algun problema, contás con 90 dias para contarnoslo. Te estaremos ayudando a resolverlo. Tu compra esta asegurada.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

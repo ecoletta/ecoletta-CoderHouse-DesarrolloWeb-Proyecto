@@ -20,6 +20,12 @@ form{
     margin-bottom: 20px;
 }
 
+.escalarMenos:hover{
+    transform:scale(1.1);
+    color: white;
+    background-color: white;
+}
+
 .boton{
     font-weight: bold;
     &--centrado{
@@ -38,5 +44,3 @@ form{
 .form-check .form-check-input{
     float: none;
     }
-
-
