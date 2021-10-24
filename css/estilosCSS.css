@@ -19,6 +19,15 @@
   text-align: center;
   font-size: 50px; }
 
+.letraPrecio {
+  color: chartreuse;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px; }
+
+.letraArticulos {
+  font-family: 'Staatliches', cursive; }
+
 p {
   color: black;
   font-family: 'Roboto', sans-serif; }
@@ -40,6 +49,9 @@ section img {
   width: 100%;
   height: auto; }
 
+.productoEscalar:hover {
+  transform: scale(1.1); }
+
 .articulo--colorImpar {
   background-color: var(--myturquoise1-color); }
 
@@ -48,7 +60,9 @@ section img {
 
 .articulo--titulo {
   font-size: 30px;
-  text-align: center; }
+  text-align: center;
+  color: black;
+  font-weight: bold; }
 
 .articulo--subtitulo {
   font-size: 20px;
@@ -59,6 +73,11 @@ section img {
 
 .articulo--parrafoIzq {
   text-align: left; }
+
+.articulo--letra {
+  font-family: 'Staatliches', cursive;
+  font-size: medium;
+  color: black; }
 
 .espacioAbajo {
   margin-bottom: 20px; }
@@ -182,13 +201,16 @@ nav {
   grid-template-areas: "header     header      header" "banner     banner      banner" "contacto   direccion   rrss" "mapa       mapa        mapa"; }
 
 .contactoContacto {
-  grid-area: contacto; }
+  grid-area: contacto;
+  height: auto; }
 
 .direccionContacto {
-  grid-area: direccion; }
+  grid-area: direccion;
+  height: auto; }
 
 .rrssContacto {
-  grid-area: rrss; }
+  grid-area: rrss;
+  height: auto; }
 
 .mapaContacto {
   grid-area: mapa;
