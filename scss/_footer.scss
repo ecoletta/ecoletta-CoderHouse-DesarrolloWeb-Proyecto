@@ -31,6 +31,17 @@ footer .contenedor {
         }
     }
 
+    &__suscripcion{
+        height: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
+    &__correo{
+        display: block;
+        width: 100%;
+    }
+
 }
 
 // LA FUNCION DE LOGOCHAT SOLO ESTA HABILITADA PARA PANTALLAS MAYORES A 1120px

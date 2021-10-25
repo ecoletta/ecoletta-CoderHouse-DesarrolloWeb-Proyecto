@@ -334,6 +334,13 @@ footer .contenedor {
     margin-top: 10px; }
     footer .contenedor__icono--color {
       color: black; }
+  footer .contenedor__suscripcion {
+    height: 100%;
+    text-align: center;
+    align-content: center; }
+  footer .contenedor__correo {
+    display: block;
+    width: 100%; }
 
 .logoChat {
   height: 90px;
